@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ProductApi</name>
+    </assembly>
+    <members>
+        <member name="M:ProductApi.Controllers.ProductsController.GetProducts">
+            <summary>Get all products</summary>
+        </member>
+        <member name="M:ProductApi.Controllers.ProductsController.GetProduct(System.Int32)">
+            <summary>Get product by id</summary>
+        </member>
+        <member name="M:ProductApi.Controllers.ProductsController.CreateProduct(ProductApi.Models.Product)">
+            <summary>Create product</summary>
+        </member>
+        <member name="M:ProductApi.Controllers.ProductsController.UpdateProduct(System.Int32,ProductApi.Models.Product)">
+            <summary>Update product</summary>
+        </member>
+        <member name="M:ProductApi.Controllers.ProductsController.DeleteProduct(System.Int32)">
+            <summary>Delete product</summary>
+        </member>
+    </members>
+</doc>
