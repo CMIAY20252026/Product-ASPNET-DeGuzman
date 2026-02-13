@@ -12,37 +12,67 @@ namespace ProductApi.Controllers
         private static List<Product> products = new();
         private static int idCounter = 1;
 
-        /// <summary>Get all products</summary>
+        public static void ResetData()
+        {
+            products.Clear();
+            idCounter = 1;
+        }
+
+        /// <summary>
+        /// Get all products
+        /// </summary>
         [HttpGet]
         public ActionResult<IEnumerable<Product>> GetProducts()
         {
             return Ok(products);
         }
 
-        /// <summary>Get product by id</summary>
+        /// <summary>
+        /// Get product by ID
+        /// </summary>
         [HttpGet("{id}")]
         public ActionResult<Product> GetProduct(int id)
         {
             var product = products.FirstOrDefault(p => p.Id == id);
-            if (product == null) return NotFound();
+
+            if (product == null)
+                return NotFound();
+
             return Ok(product);
         }
 
-        /// <summary>Create product</summary>
+        /// <summary>
+        /// Create new product
+        /// </summary>
         [HttpPost]
         public ActionResult<Product> CreateProduct(Product product)
         {
+            if (product == null)
+                return BadRequest();
+
             product.Id = idCounter++;
             products.Add(product);
-            return CreatedAtAction(nameof(GetProduct), new { id = product.Id }, product);
+
+            return CreatedAtAction(
+                nameof(GetProduct),
+                new { id = product.Id },
+                product
+            );
         }
 
-        /// <summary>Update product</summary>
+        /// <summary>
+        /// Update existing product
+        /// </summary>
         [HttpPut("{id}")]
         public IActionResult UpdateProduct(int id, Product updated)
         {
+            if (updated == null)
+                return BadRequest();
+
             var product = products.FirstOrDefault(p => p.Id == id);
-            if (product == null) return NotFound();
+
+            if (product == null)
+                return NotFound();
 
             product.Name = updated.Name;
             product.Price = updated.Price;
@@ -50,14 +80,19 @@ namespace ProductApi.Controllers
             return NoContent();
         }
 
-        /// <summary>Delete product</summary>
+        /// <summary>
+        /// Delete product
+        /// </summary>
         [HttpDelete("{id}")]
         public IActionResult DeleteProduct(int id)
         {
             var product = products.FirstOrDefault(p => p.Id == id);
-            if (product == null) return NotFound();
+
+            if (product == null)
+                return NotFound();
 
             products.Remove(product);
+
             return NoContent();
         }
     }

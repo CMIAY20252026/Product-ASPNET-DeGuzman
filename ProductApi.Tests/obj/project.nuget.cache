@@ -1,0 +1,40 @@
+{
+  "version": 2,
+  "dgSpecHash": "hnSJRMwD18I=",
+  "success": true,
+  "projectFilePath": "/workspaces/Product-ASPNET-DeGuzman/ProductApi.Tests/ProductApi.Tests.csproj",
+  "expectedPackageFiles": [
+    "/home/codespace/.nuget/packages/coverlet.collector/6.0.0/coverlet.collector.6.0.0.nupkg.sha512",
+    "/home/codespace/.nuget/packages/microsoft.aspnetcore.openapi/8.0.23/microsoft.aspnetcore.openapi.8.0.23.nupkg.sha512",
+    "/home/codespace/.nuget/packages/microsoft.codecoverage/17.9.0/microsoft.codecoverage.17.9.0.nupkg.sha512",
+    "/home/codespace/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "/home/codespace/.nuget/packages/microsoft.net.test.sdk/17.9.0/microsoft.net.test.sdk.17.9.0.nupkg.sha512",
+    "/home/codespace/.nuget/packages/microsoft.openapi/1.6.14/microsoft.openapi.1.6.14.nupkg.sha512",
+    "/home/codespace/.nuget/packages/microsoft.testplatform.objectmodel/17.9.0/microsoft.testplatform.objectmodel.17.9.0.nupkg.sha512",
+    "/home/codespace/.nuget/packages/microsoft.testplatform.testhost/17.9.0/microsoft.testplatform.testhost.17.9.0.nupkg.sha512",
+    "/home/codespace/.nuget/packages/mstest.testadapter/3.0.2/mstest.testadapter.3.0.2.nupkg.sha512",
+    "/home/codespace/.nuget/packages/mstest.testframework/3.0.2/mstest.testframework.3.0.2.nupkg.sha512",
+    "/home/codespace/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512",
+    "/home/codespace/.nuget/packages/swashbuckle.aspnetcore/6.6.2/swashbuckle.aspnetcore.6.6.2.nupkg.sha512",
+    "/home/codespace/.nuget/packages/swashbuckle.aspnetcore.swagger/6.6.2/swashbuckle.aspnetcore.swagger.6.6.2.nupkg.sha512",
+    "/home/codespace/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.6.2/swashbuckle.aspnetcore.swaggergen.6.6.2.nupkg.sha512",
+    "/home/codespace/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.6.2/swashbuckle.aspnetcore.swaggerui.6.6.2.nupkg.sha512",
+    "/home/codespace/.nuget/packages/system.reflection.metadata/1.6.0/system.reflection.metadata.1.6.0.nupkg.sha512",
+    "/home/codespace/.nuget/packages/microsoft.netcore.app.ref/8.0.22/microsoft.netcore.app.ref.8.0.22.nupkg.sha512",
+    "/home/codespace/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.22/microsoft.aspnetcore.app.ref.8.0.22.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "message": "ProductApi.Tests depends on Microsoft.NET.Test.Sdk (>= 17.8.1) but Microsoft.NET.Test.Sdk 17.8.1 was not found. Microsoft.NET.Test.Sdk 17.9.0 was resolved instead.",
+      "projectPath": "/workspaces/Product-ASPNET-DeGuzman/ProductApi.Tests/ProductApi.Tests.csproj",
+      "warningLevel": 1,
+      "filePath": "/workspaces/Product-ASPNET-DeGuzman/ProductApi.Tests/ProductApi.Tests.csproj",
+      "libraryId": "Microsoft.NET.Test.Sdk",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
+}

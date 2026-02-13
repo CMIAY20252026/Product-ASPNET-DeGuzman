@@ -5,19 +5,29 @@
     </assembly>
     <members>
         <member name="M:ProductApi.Controllers.ProductsController.GetProducts">
-            <summary>Get all products</summary>
+            <summary>
+            Get all products
+            </summary>
         </member>
         <member name="M:ProductApi.Controllers.ProductsController.GetProduct(System.Int32)">
-            <summary>Get product by id</summary>
+            <summary>
+            Get product by ID
+            </summary>
         </member>
         <member name="M:ProductApi.Controllers.ProductsController.CreateProduct(ProductApi.Models.Product)">
-            <summary>Create product</summary>
+            <summary>
+            Create new product
+            </summary>
         </member>
         <member name="M:ProductApi.Controllers.ProductsController.UpdateProduct(System.Int32,ProductApi.Models.Product)">
-            <summary>Update product</summary>
+            <summary>
+            Update existing product
+            </summary>
         </member>
         <member name="M:ProductApi.Controllers.ProductsController.DeleteProduct(System.Int32)">
-            <summary>Delete product</summary>
+            <summary>
+            Delete product
+            </summary>
         </member>
     </members>
 </doc>
